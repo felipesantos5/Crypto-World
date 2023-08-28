@@ -7,9 +7,13 @@ export default {
       "2xl": { max: "1535px" },
       xl: { max: "1279px" },
       lg: { max: "1000px" },
+      slg: { max: "920px" },
       md: { max: "750px" },
       sm: { max: "450px" },
-      xsm: { max: "500px" },
+      xsm: { max: "300px" },
+    },
+    minHeight: {
+      "80vh": "75vh",
     },
     extend: {
       maxWidth: {
@@ -17,8 +21,10 @@ export default {
         150: "150px",
       },
       spacing: {
-        10: "10vh",
+        "10vh": "10vh",
         80: "80vh",
+        300: "300px",
+        450: "450px",
         500: "500px",
       },
     },
