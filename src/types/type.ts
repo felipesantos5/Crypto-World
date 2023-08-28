@@ -21,4 +21,7 @@ export interface CryptoNoticesInterface {
   publishedAt: string;
   content: string;
   url: string;
+  source: {
+    name: string;
+  };
 }
