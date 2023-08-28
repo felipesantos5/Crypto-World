@@ -8,7 +8,10 @@ export const fetchCryptoNews = async () => {
 
   try {
     const response = await axios.get(url);
-    const newsData: CryptoNoticesInterface[] = response.data.articles.filter((article: CryptoNoticesInterface) => article.urlToImage !== null);
+    const newsData: CryptoNoticesInterface[] = response.data.articles
+      .filter((article: CryptoNoticesInterface) => article.urlToImage !== null)
+      .sort((a: CryptoNoticesInterface, b: CryptoNoticesInterface) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+
     return newsData;
   } catch (error) {
     console.error("Erro ao obter dados de notícias:", error);
