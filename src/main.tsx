@@ -6,7 +6,6 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Errorpage } from "./routes/errorpage";
 import { CryptoList } from "./routes/cryptoList";
-import { CryptoNotices } from "./routes/cryptoNotices";
 
 const router = createBrowserRouter([
   {
@@ -17,10 +16,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <CryptoList />,
-      },
-      {
-        path: "/cryptonotices",
-        element: <CryptoNotices />,
       },
     ],
   },

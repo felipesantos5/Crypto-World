@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import { DarkmodeButton } from "../darkmode/darkmodeButton";
-import { MenuHamburguer } from "./menuHamburguer/menuHamburguer";
 
 export const Header = () => {
   return (
@@ -9,12 +7,9 @@ export const Header = () => {
         <div>
           <h2 className="text-5xl font-bold lg:text-4xl md:text-3xl">Crypto World</h2>
         </div>
-        <div className="flex items-center gap-8 font-semibold text-xl sm:hidden slg:text-lg">
-          <Link to="/">CryptoList</Link>
-          <Link to="/cryptonotices">Crypto Notices</Link>
+        <div className="flex items-center gap-8 font-semibold text-xl">
           <DarkmodeButton />
         </div>
-        <MenuHamburguer />
       </div>
     </header>
   );

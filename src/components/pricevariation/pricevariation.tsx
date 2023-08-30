@@ -1,5 +1,5 @@
 interface ChangePercentFormatterProps {
-  children: string; // Alterado para string
+  children: string;
 }
 
 export const PriveVariation = ({ children }: ChangePercentFormatterProps) => {
