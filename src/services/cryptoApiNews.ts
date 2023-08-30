@@ -1,9 +1,8 @@
 import axios from "axios";
 import { CryptoNoticesInterface } from "../types/type";
 
-const apiKey = "a846022e95344ba99dad5080f2865cb2";
-
 export const fetchCryptoNews = async () => {
+  const apiKey = "a846022e95344ba99dad5080f2865cb2";
   const url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=${apiKey}`;
 
   try {
