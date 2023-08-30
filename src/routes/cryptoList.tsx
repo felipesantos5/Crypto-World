@@ -6,7 +6,7 @@ import { SkeletonCardMostPopular } from "../components/skeletonLoader/skeletonMo
 import { PriveVariation } from "../components/pricevariation/pricevariation";
 import { motion } from "framer-motion";
 
-const coinIds = ["bitcoin", "ethereum", "tether", "binance-coin", "polygon", "cardano", "solana", "polkadot", "avalanche", "dogecoin", "xrp", "uniswap", "usd-coin", "chainlink", "litecoin"];
+const coinIds = ["bitcoin", "ethereum", "tether", "binance-coin", "polygon", "cardano", "solana", "polkadot", "avalanche", "dogecoin", "xrp", "uniswap", "usd-coin", "chainlink", "litecoin", "tron"];
 
 export const CryptoList = () => {
   const [coinData, setCoinData] = useState<CoinData[]>([]);
