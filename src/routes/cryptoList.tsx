@@ -32,7 +32,7 @@ export const CryptoList = () => {
 
   return (
     <main className="dark:bg-slate-800 dark:text-white">
-      <section className="flex flex-wrap justify-center gap-10 py-10  max-w-7xl m-auto min-h-80vh overflow-x-hidden">
+      <section className="flex flex-wrap justify-center gap-10 py-10 px-5 max-w-7xl m-auto min-h-80vh overflow-x-hidden">
         {loading
           ? Array.from({ length: 15 }).map((_, index) => <SkeletonCardMostPopular key={index} />)
           : coinData.map((coin) => (
