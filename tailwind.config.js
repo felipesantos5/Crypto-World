@@ -9,11 +9,11 @@ export default {
       lg: { max: "1000px" },
       slg: { max: "920px" },
       md: { max: "750px" },
-      sm: { max: "450px" },
+      sm: { max: "600px" },
       xsm: { max: "300px" },
     },
     minHeight: {
-      "80vh": "75vh",
+      "80vh": "83.1vh",
     },
     extend: {
       maxWidth: {
@@ -26,6 +26,7 @@ export default {
         300: "300px",
         450: "450px",
         500: "500px",
+        700: "700px",
       },
     },
   },
