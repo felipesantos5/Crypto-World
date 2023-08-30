@@ -13,7 +13,6 @@ export const SkeletonCardNotices = () => {
         <div className="bg-gray-300 h-6 rounded-md hidden md:block"></div>
         <div className="bg-gray-300 h-6 rounded-md hidden md:block"></div>
         <div className="bg-gray-300 h-6 rounded-md hidden md:block"></div>
-        <div className="bg-gray-300 h-6 rounded-md hidden md:block"></div>
         <div className="bg-gray-300 w-1/6 h-5 rounded-md"></div>
       </div>
     </motion.section>
