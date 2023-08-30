@@ -4,10 +4,9 @@ import App from "./App";
 import "./index.css";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Errorpage } from "./pages/errorpage";
-import { Home } from "./pages/home";
-import { MostPopular } from "./pages/mostPopular";
-import { CryptoNotices } from "./pages/cryptoNotices";
+import { Errorpage } from "./routes/errorpage";
+import { CryptoList } from "./routes/cryptoList";
+import { CryptoNotices } from "./routes/cryptoNotices";
 
 const router = createBrowserRouter([
   {
@@ -17,11 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/mostpopular",
-        element: <MostPopular />,
+        element: <CryptoList />,
       },
       {
         path: "/cryptonotices",
