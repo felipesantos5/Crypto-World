@@ -19,6 +19,6 @@ Crypto World is a website that displays real-time information about the prices o
 - **Tailwind CSS**: Utility-first CSS framework for quick and consistent styling.
 - **Cryptocurrency API**: Integration with an API to fetch price data.
 
-- ## How to Access the Site
+## How to Access the Site
 
 You can access the Crypto World website by following this link: [Crypto World](https://crypto-world-phi.vercel.app/). The website provides real-time cryptocurrency price information and more.
