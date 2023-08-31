@@ -1,27 +1,24 @@
-# React + TypeScript + Vite
+# Crypto World
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Crypto World is a website that displays real-time information about the prices of the most popular cryptocurrencies. The project was developed using React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+![Crypto World](/src/images/project.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Real-time price visualization of the most popular cryptocurrencies.
+- Responsive interface with adaptable layout for different devices.
+- Use of smooth animations for a pleasant user experience.
+- Integration with an API to fetch updated cryptocurrency data.
+- Intuitive and easy-to-navigate user interface.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: JavaScript superset that adds static typing.
+- **Tailwind CSS**: Utility-first CSS framework for quick and consistent styling.
+- **Cryptocurrency API**: Integration with an API to fetch price data.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## How to Access the Site
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+You can access the Crypto World website by following this link: [Crypto World](https://crypto-world-phi.vercel.app/). The website provides real-time cryptocurrency price information and more.
