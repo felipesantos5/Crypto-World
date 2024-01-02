@@ -1,4 +1,3 @@
-// src/context/DarkModeContext.tsx
 import { createContext, useState, useEffect, ReactNode } from "react";
 
 export interface DarkModeContextProps {
@@ -13,9 +12,11 @@ interface DarkModeProviderProps {
 }
 
 export const DarkModeProvider = ({ children }: DarkModeProviderProps) => {
+  const prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedMode = localStorage.getItem("darkMode");
-    return savedMode === "true";
+    return savedMode === "true" || (prefersDarkMode && savedMode !== "false");
   });
 
   const toggleDarkMode = () => {
