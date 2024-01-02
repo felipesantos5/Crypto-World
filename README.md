@@ -2,7 +2,7 @@
 
 Crypto World is a website that displays real-time information about the prices of the most popular cryptocurrencies. The project was developed using React, TypeScript, and Tailwind CSS.
 
-![Crypto World](/src/images/project.png)
+![Crypto World](/images/project.png)
 
 ## Features
 
