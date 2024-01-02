@@ -4,7 +4,7 @@ import { DarkModeContext, DarkModeContextProps } from "../contexts/darkModeConte
 export const useDarkMode = (): DarkModeContextProps => {
   const context = useContext(DarkModeContext);
   if (!context) {
-    throw new Error("useDarkMode must be used within a DarkModeProvider");
+    throw new Error("dark mode error");
   }
   return context;
 };
