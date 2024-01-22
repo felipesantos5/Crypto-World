@@ -14,7 +14,6 @@ const coinImages: Record<string, string> = {
   chainlink: "chainlink.webp",
   "binance-usd": "binanceusd.webp",
   trueusd: "trueusd.webp",
-  uniswap: "uniswap.webp",
   "usd-coin": "usdcoin.webp",
   "binance-coin": "binancecoin.webp",
 };

@@ -6,7 +6,7 @@ import { SkeletonCardMostPopular } from "../components/skeletonLoader/skeletonMo
 import { PriveVariation } from "../components/pricevariation/pricevariation";
 import { motion } from "framer-motion";
 
-const coinIds = ["bitcoin", "ethereum", "tether", "binance-coin", "polygon", "cardano", "solana", "polkadot", "avalanche", "dogecoin", "xrp", "uniswap", "usd-coin", "chainlink", "litecoin", "tron"];
+const coinIds = ["bitcoin", "ethereum", "tether", "binance-coin", "polygon", "cardano", "solana", "polkadot", "avalanche", "dogecoin", "xrp", "usd-coin", "chainlink", "litecoin", "tron"];
 
 export const CryptoList = () => {
   const [coinData, setCoinData] = useState<CoinData[]>([]);
@@ -31,7 +31,7 @@ export const CryptoList = () => {
   }, []);
 
   return (
-    <main className="dark:bg-zinc-900 dark:text-white">
+    <main className="dark:bg-zinc-900 dark:text-white transition-colors duration-1000">
       <section className="flex flex-wrap justify-center gap-10 py-10 px-5 max-w-7xl m-auto min-h-80vh overflow-x-hidden">
         {loading
           ? Array.from({ length: 15 }).map((_, index) => <SkeletonCardMostPopular key={index} />)
@@ -40,7 +40,7 @@ export const CryptoList = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ ease: "easeOut", duration: 2 }}
-                className="flex flex-col justify-between shadow-xl rounded-lg w-52 h-60 p-4 bg-white text-black"
+                className="flex flex-col justify-between shadow-xl rounded-lg w-52 h-60 p-4 bg-white dark:bg-zinc-800 dark:text-white text-black"
                 key={coin.id}
               >
                 <div className="flex justify-between mt-2 flex-wrap">
@@ -49,7 +49,7 @@ export const CryptoList = () => {
                 </div>
                 <div>
                   <h2 className="font-semibold text-xl">{coin.name}</h2>
-                  <p className="text-gray-600 text-lg font-semibold">$ {coin.priceUsd.slice(0, 7)}</p>
+                  <p className="text-gray-600 text-lg font-semibold dark:text-white">$ {coin.priceUsd.slice(0, 7)}</p>
                 </div>
                 <div>
                   <a href={coin.explorer} target="_blank" className="underline ">
