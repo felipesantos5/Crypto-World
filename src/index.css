@@ -11,7 +11,7 @@
   position: relative;
   width: 40px;
   height: 40px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 
 .icon {
@@ -19,11 +19,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 
 .icon-container.dark {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 
 .icon.light {
