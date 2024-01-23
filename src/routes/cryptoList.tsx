@@ -49,7 +49,7 @@ export const CryptoList = () => {
                 </div>
                 <div>
                   <h2 className="font-semibold text-xl">{coin.name}</h2>
-                  <p className="text-gray-600 text-lg font-semibold dark:text-white">$ {coin.priceUsd.slice(0, 7)}</p>
+                  <p className="text-gray-600 text-lg font-semibold dark:text-white transition-colors duration-1000">$ {coin.priceUsd.slice(0, 7)}</p>
                 </div>
                 <div>
                   <a href={coin.explorer} target="_blank" className="underline ">
