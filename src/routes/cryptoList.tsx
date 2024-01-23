@@ -31,7 +31,7 @@ export const CryptoList = () => {
   }, []);
 
   return (
-    <main className="dark:bg-zinc-900 dark:text-white transition-colors duration-1000">
+    <main className="bg-slate-50 dark:bg-zinc-900 dark:text-white transition-colors duration-1000">
       <section className="flex flex-wrap justify-center gap-10 py-10 px-5 max-w-7xl m-auto min-h-80vh overflow-x-hidden">
         {loading
           ? Array.from({ length: 15 }).map((_, index) => <SkeletonCardMostPopular key={index} />)
@@ -40,7 +40,7 @@ export const CryptoList = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ ease: "easeOut", duration: 2 }}
-                className="flex flex-col justify-between shadow-xl rounded-lg w-52 h-60 p-4 bg-white dark:bg-zinc-800 dark:text-white text-black transition-colors duration-1000"
+                className="flex flex-col justify-between shadow-xl rounded-lg w-52 h-60 p-4 bg-slate-100 dark:bg-zinc-800 dark:text-white text-black transition-colors duration-1000"
                 key={coin.id}
               >
                 <div className="flex justify-between mt-2 flex-wrap">
