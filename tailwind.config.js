@@ -20,6 +20,9 @@ export default {
         1444: "1444px",
         150: "150px",
       },
+      colors: {
+        gray: "#4B5563",
+      },
       spacing: {
         "10vh": "10vh",
         80: "80vh",
