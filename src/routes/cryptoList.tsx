@@ -31,7 +31,7 @@ export const CryptoList = () => {
   }, []);
 
   return (
-    <main className="bg-slate-50 dark:bg-zinc-900 dark:text-white transition-colors duration-1000">
+    <main className="bg-slate-50 dark:bg-zinc-900 transition-colors duration-1000">
       <section className="flex flex-wrap justify-center gap-10 py-10 px-5 max-w-7xl m-auto min-h-80vh overflow-x-hidden">
         {loading
           ? Array.from({ length: 15 }).map((_, index) => <SkeletonCardMostPopular key={index} />)
@@ -48,8 +48,8 @@ export const CryptoList = () => {
                   <PriveVariation children={coin.changePercent24Hr} />
                 </div>
                 <div>
-                  <h2 className="font-semibold text-xl">{coin.name}</h2>
-                  <p className="text-gray-600 text-lg font-semibold dark:text-white transition-colors duration-1000">$ {coin.priceUsd.slice(0, 7)}</p>
+                  <p className="font-semibold text-xl">{coin.name}</p>
+                  <p className="text-gray-600 text-lg font-semibold">$ {coin.priceUsd.slice(0, 7)}</p>
                 </div>
                 <div>
                   <a href={coin.explorer} target="_blank" className="underline ">
